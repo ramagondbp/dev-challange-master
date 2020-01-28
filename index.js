@@ -57,11 +57,7 @@ function displayTableList(listArray1){
         var lastCell = addCell(row, ''); 
         var dataSpan = $("<span>");
         dataSpan.appendTo(lastCell);
-        dataSpan.sparkline([30, item.bestBid, (item.bestBid + item.bestAsk)/2, item.bestAsk, 30]);
-        // dataSpan.sparkline(amountData, {
-        //     type: 'bar',
-        //     barColor: '#191919'
-        // });     
+        dataSpan.sparkline([30, item.bestBid, (item.bestBid + item.bestAsk)/2, item.bestAsk, 30]);    
       });
 }
 
